@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"io"
 	"os"
 	"os/exec"
 	"strings"
@@ -27,6 +28,9 @@ func main() {
 }
 
 func argFilter(args []string) {
+	if len(args) == 1 {
+		return
+	}
 	cmd := args[1]
 	switch strings.ToLower(cmd) {
 	case "version", "v":
@@ -67,15 +71,106 @@ func childArgBuild(args []string) map[string]string {
 	return result
 }
 
+func CopyFile(dstFileName string, srcFileName string) (written int64, err error) {
+
+	srcFile, err := os.Open(srcFileName)
+
+	if err != nil {
+		fmt.Printf("open file err = %v\n", err)
+		return
+	}
+
+	defer srcFile.Close()
+
+	//通过srcFile，获取到Reader
+	reader := bufio.NewReader(srcFile)
+
+	//打开dstFileName
+	dstFile, err := os.OpenFile(dstFileName, os.O_WRONLY|os.O_CREATE, 0666)
+	if err != nil {
+		fmt.Printf("open file err = %v\n", err)
+		return
+	}
+
+	writer := bufio.NewWriter(dstFile)
+	defer func() {
+		writer.Flush() //把缓冲区的内容写入到文件
+		dstFile.Close()
+
+	}()
+
+	return io.Copy(writer, reader)
+
+}
+
+// 处理要使用的文件
+func fileReplace(path string, env map[string]string) error {
+	newPath := path + ".backup"
+	if _, err := os.Stat(path); os.IsExist(err) {
+		println("." + path + " file not found")
+		return err
+	}
+
+	// 备份文件已存在,删除当前文件,备份文件恢复成原始文件
+	fileRestore(path)
+
+	// 复制一份备份文件
+	CopyFile(newPath, path)
+
+	// 读备份文件
+	var backupFile, bFileErr = os.OpenFile(newPath, os.O_RDONLY, 0666)
+	defer backupFile.Close()
+	if bFileErr != nil {
+		println("." + newPath + " file can't open")
+		return bFileErr
+	}
+	// 写原始文件
+	var orgFile, oFileErr = os.OpenFile(newPath, os.O_CREATE|os.O_WRONLY, 0666)
+	defer orgFile.Close()
+	if oFileErr != nil {
+		println("." + path + " file can't open")
+		return oFileErr
+	}
+
+	writer := bufio.NewWriter(orgFile)
+	scanner := bufio.NewScanner(backupFile)
+	for scanner.Scan() {
+		line := scanner.Text()
+		newline := envReplace(line, env)
+		writer.Write([]byte(newline))
+	}
+	writer.Flush()
+
+	return nil
+}
+
+// 还原文件
+func fileRestore(path string) {
+	newPath := path + ".backup"
+	if _, err := os.Stat(newPath); os.IsExist(err) {
+		os.Remove(path)
+		os.Rename(newPath, path)
+	}
+}
+
 func argRun(args []string) {
 	// 构造入参 hashmap
 	env := childArgBuild(args)
+	// 替换 hashmap 内变量
+	for key, val := range env {
+		env[key] = envReplace(val, env)
+	}
 
 	path, err := os.Getwd()
 	if err != nil {
 		return
 	}
 
+	// 处理 docker 文件
+	fileReplace("dockerfile", env)
+	defer fileRestore("dockerfile")
+
+	// 处理 gaeshell 文件
 	shellPath := path + "/.gaeshell"
 	if _, err := os.Stat(shellPath); os.IsExist(err) {
 		println(".gaeshell file not found")

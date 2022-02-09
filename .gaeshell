@@ -1,7 +1,7 @@
 echo "构建jar"
 mvn clean deploy "-Dmaven.test.skip=true"
 echo "构建 image"
-docker build -t ${n}:${v} .
+docker build --no-cache -t ${n}:${v} .
 echo "增加tags"
 docker tag ${n}:${v} ${h}${n}:${v}
 echo "推送到镜像仓库"
