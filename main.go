@@ -103,10 +103,22 @@ func CopyFile(dstFileName string, srcFileName string) (written int64, err error)
 
 }
 
+func PathExists(path string) (bool, error) {
+	_, err := os.Stat(path)
+	if err == nil {
+		return true, nil
+	}
+	if os.IsNotExist(err) {
+		return false, nil
+	}
+	return false, err
+}
+
 // 处理要使用的文件
 func fileReplace(path string, env map[string]string) error {
 	newPath := path + ".backup"
-	if _, err := os.Stat(path); os.IsExist(err) {
+
+	if f, err := PathExists(path); f == false {
 		println("." + path + " file not found")
 		return err
 	}
@@ -125,7 +137,7 @@ func fileReplace(path string, env map[string]string) error {
 		return bFileErr
 	}
 	// 写原始文件
-	var orgFile, oFileErr = os.OpenFile(newPath, os.O_CREATE|os.O_WRONLY, 0666)
+	var orgFile, oFileErr = os.OpenFile(path, os.O_CREATE|os.O_WRONLY, 0666)
 	defer orgFile.Close()
 	if oFileErr != nil {
 		println("." + path + " file can't open")
@@ -137,7 +149,7 @@ func fileReplace(path string, env map[string]string) error {
 	for scanner.Scan() {
 		line := scanner.Text()
 		newline := envReplace(line, env)
-		writer.Write([]byte(newline))
+		writer.Write([]byte(newline + "\n"))
 	}
 	writer.Flush()
 
@@ -147,10 +159,11 @@ func fileReplace(path string, env map[string]string) error {
 // 还原文件
 func fileRestore(path string) {
 	newPath := path + ".backup"
-	if _, err := os.Stat(newPath); os.IsExist(err) {
-		os.Remove(path)
-		os.Rename(newPath, path)
+	if f, _ := PathExists(newPath); f == false {
+		return
 	}
+	os.Remove(path)
+	os.Rename(newPath, path)
 }
 
 func argRun(args []string) {
@@ -300,10 +313,9 @@ func envReplace(command string, env map[string]string) string {
 	for idx, val := range dataDict {
 		if strings.HasPrefix(val, "-") {
 			v, f := env[val]
-			if !f {
-				v = ""
+			if f {
+				dataDict[idx] = v
 			}
-			dataDict[idx] = v
 		}
 	}
 	// 还原
