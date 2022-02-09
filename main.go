@@ -200,8 +200,8 @@ func argRun(args []string) {
 	scanner := bufio.NewScanner(shell)
 	for scanner.Scan() {
 		line := scanner.Text()
-		if err := doShell(line, env); err != nil {
-			fmt.Printf("Command:%s ->Error:%s\n", line, err)
+		if cmdString, err := doShell(line, env); err != nil {
+			fmt.Printf("Command:%s ->Error:%s\n", cmdString, err)
 			return // 如果脚本执行出错，禁止脚本运行
 		}
 	}
@@ -222,7 +222,7 @@ func testShell() {
 	fmt.Printf("message: %s\n", output)
 }
 
-func doShell(cmdString string, env map[string]string) error {
+func doShell(cmdString string, env map[string]string) (string, error) {
 	// 替换参数
 	cmdString = envReplace(cmdString, env)
 
@@ -233,7 +233,7 @@ func doShell(cmdString string, env map[string]string) error {
 
 	// 执行内置命令
 	if next := cmdFilter(command, args...); !next {
-		return nil
+		return cmdString, nil
 	}
 
 	// 执行系统命令
@@ -241,6 +241,7 @@ func doShell(cmdString string, env map[string]string) error {
 	// 还原命令行
 	cmd.SysProcAttr = &syscall.SysProcAttr{CmdLine: cmdString}
 	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
 	/*
 		output, err := cmd.CombinedOutput()
 		if err != nil {
@@ -250,10 +251,10 @@ func doShell(cmdString string, env map[string]string) error {
 
 	// 执行时，包含双引号的参数被转义成 "\""
 	if err := cmd.Run(); err != nil {
-		return err
+		return cmdString, err
 	}
 
-	return nil
+	return cmdString, nil
 }
 
 func commandlineToArray(cmdString string) []string {
