@@ -295,7 +295,7 @@ func envReplace(command string, env map[string]string) string {
 	l := len(command)
 	for i := 0; i < l; i++ {
 		// 找到环境变量入口
-		if command[i] == '$' && (i+1) < l && command[i+1] == '{' {
+		if command[i] == '#' && (i+1) < l && command[i+1] == '{' {
 			dataDict = append(dataDict, command[startIdx:i])
 			startIdx = i + 2
 			inlineMode = true

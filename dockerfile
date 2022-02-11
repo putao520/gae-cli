@@ -1,5 +1,6 @@
 FROM openjdk:17.0.2
-COPY ./db/ /home/app/db
-COPY ./target/${f} /home/app
+COPY ./target/#{f} /home/app/
 WORKDIR /home/app
-CMD ["java", "-Dfile.encoding=utf-8", "-jar", "${f}", "-k", "grapeSoft@", "-p", "805"]
+ENV GSC_HOST "127.0.0.1:805"
+RUN echo 'GSC_HOST=' ${GSC_HOST}  # 打印一下默认值
+CMD ["java", "-Dfile.encoding=utf-8", "-jar", "#{f}", "-n", "test", "-h", "${GSC_HOST}"]
