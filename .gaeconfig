@@ -1,0 +1,8 @@
+{
+    providers:{
+        "server_provider_name":{
+            "host": "http://127.0.0.1:805",
+            "token": ""
+        }
+    }
+}

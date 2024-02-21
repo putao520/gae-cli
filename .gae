@@ -1,0 +1,7 @@
+{
+    "project": {
+        "provider": "aws",
+        "appId": "",
+        "serviceId": "",
+    }
+}

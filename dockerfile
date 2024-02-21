@@ -1,4 +1,4 @@
-FROM openjdk:17.0.2
+FROM ghcr.io/graalvm/graalvm-ce:ol8-java11-22.3.3
 COPY ./target/#{f} /home/app/
 WORKDIR /home/app
 ENV GSC_HOST "127.0.0.1:805"
