@@ -16,7 +16,7 @@ import (
 		help
 */
 func main() {
-	// 访问当前上下文的目录，获得 .gpaeshell 文件，依次支持它
+	// 访问当前上下文的目录，获得 .gaeshell 文件，依次支持它
 	println("|--------------------------|")
 	println("|     Grape App Engine     |")
 	println("|               v" + handle.GlobalVer + "     |")
@@ -35,6 +35,8 @@ func ArgFilter(args []string) {
 		handle.ArgVersion()
 	case "run", "r":
 		handle.ArgRun(args[2:])
+	case "init", "i":
+		handle.ArgService()
 	case "provider":
 		handle.ArgProvider(args[2:])
 	case "login":

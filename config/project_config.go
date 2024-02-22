@@ -6,9 +6,10 @@ import (
 )
 
 type GaeProjectConfigInfo struct {
-	Provider  string `json:"provider"`
-	AppID     string `json:"appId"`
-	ServiceID string `json:"serviceId"`
+	Provider       string `json:"provider"`
+	AppID          string `json:"appId"`
+	ServiceID      string `json:"serviceId"`
+	DockerRegistry string `json:"dockerRegistry"`
 }
 
 type GaeProjectConfig struct {
@@ -21,7 +22,7 @@ func ReadGaeProjectConfig() *GaeProjectConfig {
 		return nil
 	}
 	// 读取当前目录下的 .gae 文件(项目配置文件)
-	projectConfigPath := path + "/.gaeshell"
+	projectConfigPath := path + "/.gae"
 	if _, err := os.Stat(projectConfigPath); os.IsExist(err) {
 		println(".gae file not found")
 		return nil
@@ -43,15 +44,28 @@ func ReadGaeProjectConfig() *GaeProjectConfig {
 	return &config
 }
 
+func createOrUpdateGaeProjectConfigImpl(configPath string, content GaeProjectConfig) {
+	// 写入配置文件
+	file, err := os.Create(configPath)
+	if err != nil {
+		println("open .gae file error")
+		return
+	}
+	defer file.Close()
+	// content 转换为 json 并写入文件
+	encoder := json.NewEncoder(file)
+	err = encoder.Encode(content)
+	if err != nil {
+		println("encode .gae file error")
+		return
+	}
+}
+
 var gaeProjectConfigInstance *GaeProjectConfig
 
 func InitGae() {
 	// 读取配置文件
-	cfg := ReadGaeProjectConfig()
-	if cfg == nil {
-		println("ReadGaeProjectConfig error")
-	}
-	gaeProjectConfigInstance = cfg
+	gaeProjectConfigInstance = ReadGaeProjectConfig()
 }
 
 func GetGaeProjectConfig() *GaeProjectConfig {
@@ -59,4 +73,14 @@ func GetGaeProjectConfig() *GaeProjectConfig {
 		InitGae()
 	}
 	return gaeProjectConfigInstance
+}
+
+func CreateOrUpdateGaeProjectConfig(config GaeProjectConfig) {
+	path, err := os.Getwd()
+	if err != nil {
+		return
+	}
+	// 读取当前目录下的 .gae 文件(项目配置文件)
+	projectConfigPath := path + "/.gae"
+	createOrUpdateGaeProjectConfigImpl(projectConfigPath, config)
 }

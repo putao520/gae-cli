@@ -39,3 +39,8 @@ func TestUserApi(t *testing.T) {
 	services.Logout()
 	TestClearProvider(t)
 }
+
+func TestBuildLocal(t *testing.T) {
+	TestProvider(t)
+	services.Login("putao520", "123123")
+}
