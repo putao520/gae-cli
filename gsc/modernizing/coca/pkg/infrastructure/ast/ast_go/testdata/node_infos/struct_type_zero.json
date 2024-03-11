@@ -1,0 +1,67 @@
+{
+  "Containers": null,
+  "DataStructures": [
+    {
+      "Annotations": null,
+      "Extend": "",
+      "Extension": null,
+      "Fields": null,
+      "FilePath": "",
+      "FunctionCalls": null,
+      "Functions": [
+        {
+          "Annotations": null,
+          "Extension": null,
+          "FunctionCalls": null,
+          "InnerFunctions": null,
+          "InnerStructures": null,
+          "IsConstructor": false,
+          "IsReturnNull": false,
+          "Modifiers": null,
+          "MultipleReturns": null,
+          "Name": "typee",
+          "Override": false,
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "ReturnType": ""
+        }
+      ],
+      "Implements": null,
+      "Imports": null,
+      "InOutProperties": null,
+      "InnerStructures": null,
+      "MultipleExtend": null,
+      "NodeName": "O",
+      "Package": "testdata",
+      "Type": ""
+    }
+  ],
+  "Fields": null,
+  "FullName": "testdata.node_infos",
+  "Imports": null,
+  "Members": [
+    {
+      "AliasPackage": "testdata",
+      "DataStructID": "O",
+      "FileID": "testdata.node_infos",
+      "FunctionNodes": null,
+      "ID": "testdata.node_infos|testdata::O",
+      "Name": "",
+      "Namespace": null,
+      "Position": {
+        "StartLine": 0,
+        "StartLinePosition": 0,
+        "StopLine": 0,
+        "StopLinePosition": 0
+      },
+      "Structures": null,
+      "Type": "struct"
+    }
+  ],
+  "PackageName": "testdata"
+}

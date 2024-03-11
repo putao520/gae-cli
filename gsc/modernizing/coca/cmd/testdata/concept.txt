@@ -1,0 +1,10 @@
+|     WORDS      | COUNTS |
+|----------------|--------|
+| book           |     11 |
+| books          |      1 |
+| controller     |      1 |
+| list           |      3 |
+| lists          |      1 |
+| repository     |      1 |
+| representation |      1 |
+| service        |      1 |

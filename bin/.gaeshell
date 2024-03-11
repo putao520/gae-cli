@@ -1,0 +1,10 @@
+echo "构建jar"
+mvn clean deploy "-Dmaven.test.skip=true"
+echo "构建docker"
+docker build --no-cache -t #{n}:#{v} .
+echo "增加tags"
+docker tag #{n}:#{v} #{h}#{n}:#{v}
+echo "推送docker"
+docker push #{h}#{n}:#{v}
+echo "拉取docker命令"
+echo "docker pull #{h}#{n}:#{v}"

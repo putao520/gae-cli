@@ -1,0 +1,80 @@
+{
+  "Containers": null,
+  "DataStructures": null,
+  "Fields": null,
+  "FullName": "testdata.node_infos",
+  "Imports": [
+    {
+      "AsName": "",
+      "ImportName": "",
+      "Scope": "",
+      "Source": "fmt",
+      "UsageName": null
+    }
+  ],
+  "Members": [
+    {
+      "AliasPackage": "testdata",
+      "DataStructID": "default",
+      "FileID": "testdata.node_infos",
+      "FunctionNodes": [
+        {
+          "Annotations": null,
+          "Extension": null,
+          "FunctionCalls": [
+            {
+              "FunctionName": "var",
+              "NodeName": "foo",
+              "Package": "testdata.node_infos",
+              "Parameters": [
+                {
+                  "Modifiers": null,
+                  "ParamName": "",
+                  "Parameters": null,
+                  "ReturnTypes": null,
+                  "TypeType": "STRING",
+                  "TypeValue": "\"Hello World!\""
+                }
+              ],
+              "Position": {
+                "StartLine": 0,
+                "StartLinePosition": 0,
+                "StopLine": 0,
+                "StopLinePosition": 0
+              },
+              "Type": ""
+            }
+          ],
+          "InnerFunctions": null,
+          "InnerStructures": null,
+          "IsConstructor": false,
+          "IsReturnNull": false,
+          "Modifiers": null,
+          "MultipleReturns": null,
+          "Name": "f",
+          "Override": false,
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "ReturnType": ""
+        }
+      ],
+      "ID": "testdata:f",
+      "Name": "",
+      "Namespace": null,
+      "Position": {
+        "StartLine": 0,
+        "StartLinePosition": 0,
+        "StopLine": 0,
+        "StopLinePosition": 0
+      },
+      "Structures": null,
+      "Type": "method"
+    }
+  ],
+  "PackageName": "testdata"
+}

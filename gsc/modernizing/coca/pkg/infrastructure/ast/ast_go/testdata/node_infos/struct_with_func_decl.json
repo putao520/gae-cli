@@ -1,0 +1,163 @@
+{
+  "Containers": null,
+  "DataStructures": [
+    {
+      "Annotations": null,
+      "Extend": "",
+      "Extension": null,
+      "Fields": null,
+      "FilePath": "",
+      "FunctionCalls": [
+        {
+          "FunctionName": "",
+          "NodeName": "string",
+          "Package": "testdata.node_infos",
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "Type": ""
+        },
+        {
+          "FunctionName": "",
+          "NodeName": "int",
+          "Package": "testdata.node_infos",
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "Type": ""
+        },
+        {
+          "FunctionName": "",
+          "NodeName": "func",
+          "Package": "testdata.node_infos",
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "Type": ""
+        }
+      ],
+      "Functions": [
+        {
+          "Annotations": null,
+          "Extension": null,
+          "FunctionCalls": [
+            {
+              "FunctionName": "Println",
+              "NodeName": "fmt",
+              "Package": "fmt",
+              "Parameters": [
+                {
+                  "Modifiers": null,
+                  "ParamName": "",
+                  "Parameters": null,
+                  "ReturnTypes": null,
+                  "TypeType": "STRING",
+                  "TypeValue": "\"Declared outside and invoked!!!\""
+                }
+              ],
+              "Position": {
+                "StartLine": 0,
+                "StartLinePosition": 0,
+                "StopLine": 0,
+                "StopLinePosition": 0
+              },
+              "Type": "fmt"
+            }
+          ],
+          "InnerFunctions": null,
+          "InnerStructures": null,
+          "IsConstructor": false,
+          "IsReturnNull": false,
+          "Modifiers": null,
+          "MultipleReturns": null,
+          "Name": "outside",
+          "Override": false,
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "ReturnType": ""
+        }
+      ],
+      "Implements": null,
+      "Imports": null,
+      "InOutProperties": [
+        {
+          "Modifiers": null,
+          "ParamName": "name",
+          "Parameters": null,
+          "ReturnTypes": null,
+          "TypeType": "Identify",
+          "TypeValue": "string"
+        },
+        {
+          "Modifiers": null,
+          "ParamName": "age",
+          "Parameters": null,
+          "ReturnTypes": null,
+          "TypeType": "Identify",
+          "TypeValue": "int"
+        },
+        {
+          "Modifiers": null,
+          "ParamName": "personfunc",
+          "Parameters": null,
+          "ReturnTypes": null,
+          "TypeType": "Function",
+          "TypeValue": "func"
+        }
+      ],
+      "InnerStructures": null,
+      "MultipleExtend": null,
+      "NodeName": "person",
+      "Package": "testdata",
+      "Type": ""
+    }
+  ],
+  "Fields": null,
+  "FullName": "testdata.node_infos",
+  "Imports": [
+    {
+      "AsName": "",
+      "ImportName": "",
+      "Scope": "",
+      "Source": "fmt",
+      "UsageName": null
+    }
+  ],
+  "Members": [
+    {
+      "AliasPackage": "testdata",
+      "DataStructID": "person",
+      "FileID": "testdata.node_infos",
+      "FunctionNodes": null,
+      "ID": "testdata.node_infos|testdata::person",
+      "Name": "",
+      "Namespace": null,
+      "Position": {
+        "StartLine": 0,
+        "StartLinePosition": 0,
+        "StopLine": 0,
+        "StopLinePosition": 0
+      },
+      "Structures": null,
+      "Type": "struct"
+    }
+  ],
+  "PackageName": "testdata"
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "Package": "com.phodal.pholedge.book",
+    "NodeName": "BookService",
+    "Type": "Class",
+    "Path": "examples/api/BookService.java",
+    "Fields": [
+      {
+        "Type": "BookFactory",
+        "Value": "bookFactory"
+      },
+      {
+        "Type": "BookRepository",
+        "Value": "bookRepository"
+      }
+    ],
+    "Functions": [
+      {
+        "Name": "doSave",
+        "ReturnType": "BookRepresentaion",
+        "StartLine": 31,
+        "StartLinePosition": 35,
+        "StopLine": 33,
+        "StopLinePosition": 48,
+        "Parameters": null,
+        "MethodCalls": [
+          {
+            "Package": "com.phodal.pholedge.book",
+            "Type": "same package",
+            "NodeName": "BookRepository",
+            "FunctionName": "list",
+            "StartLine": 32,
+            "StartLinePosition": 30,
+            "StopLine": 32,
+            "StopLinePosition": 34
+          }
+        ],
+        "Override": false,
+        "Annotations": null
+      },
+      {
+        "Name": "doUpdate",
+        "ReturnType": "BookRepresentaion",
+        "StartLine": 35,
+        "StartLinePosition": 29,
+        "StopLine": 38,
+        "StopLinePosition": 40,
+        "Parameters": [
+          {
+            "Name": "String",
+            "Type": "id"
+          }
+        ],
+        "MethodCalls": [],
+        "Override": false,
+        "Annotations": null
+      }
+    ],
+    "MethodCalls": [
+
+    ],
+    "Extend": "",
+    "Implements": [
+      "com.phodal.pholedge.core.domain.Service"
+    ]
+  },
+  {
+    "Package": "com.phodal.pholedge.book.model",
+    "NodeName": "BookRepresentaion",
+    "Type": "Class",
+    "Path": "examples/api/model/BookRepresentaion.java",
+    "Fields": [
+      {
+        "Type": "String",
+        "Value": "id"
+      },
+      {
+        "Type": "String",
+        "Value": "name"
+      }
+    ],
+    "Functions": null,
+    "MethodCalls": null,
+    "Extend": "",
+    "Implements": null
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "Containers": null,
+  "DataStructures": [
+    {
+      "Annotations": null,
+      "Extend": "",
+      "Extension": null,
+      "Fields": null,
+      "FilePath": "",
+      "FunctionCalls": [
+        {
+          "FunctionName": "",
+          "NodeName": "func",
+          "Package": "testdata.node_infos",
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "Type": ""
+        },
+        {
+          "FunctionName": "",
+          "NodeName": "string",
+          "Package": "testdata.node_infos",
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "Type": ""
+        },
+        {
+          "FunctionName": "",
+          "NodeName": "int32",
+          "Package": "testdata.node_infos",
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "Type": ""
+        }
+      ],
+      "Functions": null,
+      "Implements": null,
+      "Imports": null,
+      "InOutProperties": [
+        {
+          "Modifiers": null,
+          "ParamName": "work",
+          "Parameters": null,
+          "ReturnTypes": null,
+          "TypeType": "Function",
+          "TypeValue": "func"
+        },
+        {
+          "Modifiers": null,
+          "ParamName": "name",
+          "Parameters": null,
+          "ReturnTypes": null,
+          "TypeType": "Identify",
+          "TypeValue": "string"
+        },
+        {
+          "Modifiers": null,
+          "ParamName": "age",
+          "Parameters": null,
+          "ReturnTypes": null,
+          "TypeType": "Identify",
+          "TypeValue": "int32"
+        }
+      ],
+      "InnerStructures": null,
+      "MultipleExtend": null,
+      "NodeName": "Person",
+      "Package": "testdata",
+      "Type": ""
+    }
+  ],
+  "Fields": null,
+  "FullName": "testdata.node_infos",
+  "Imports": null,
+  "Members": [
+    {
+      "AliasPackage": "testdata",
+      "DataStructID": "Person",
+      "FileID": "testdata.node_infos",
+      "FunctionNodes": null,
+      "ID": "testdata.node_infos|testdata::Person",
+      "Name": "",
+      "Namespace": null,
+      "Position": {
+        "StartLine": 0,
+        "StartLinePosition": 0,
+        "StopLine": 0,
+        "StopLinePosition": 0
+      },
+      "Structures": null,
+      "Type": "struct"
+    }
+  ],
+  "PackageName": "testdata"
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "AsName": "",
+    "ImportName": "",
+    "Scope": "",
+    "Source": "collections.abc",
+    "UsageName": null
+  },
+  {
+    "AsName": "",
+    "ImportName": "",
+    "Scope": "",
+    "Source": "collections.abc",
+    "UsageName": [
+      "ss"
+    ]
+  },
+  {
+    "AsName": "",
+    "ImportName": "",
+    "Scope": "",
+    "Source": "collections.abc",
+    "UsageName": [
+      "ss",
+      "itertools"
+    ]
+  },
+  {
+    "AsName": "",
+    "ImportName": "",
+    "Scope": "",
+    "Source": "classdef",
+    "UsageName": [
+      "barasb"
+    ]
+  },
+  {
+    "AsName": "",
+    "ImportName": "",
+    "Scope": "",
+    "Source": ".",
+    "UsageName": [
+      "bar"
+    ]
+  },
+  {
+    "AsName": "",
+    "ImportName": "",
+    "Scope": "",
+    "Source": "...",
+    "UsageName": [
+      "bar"
+    ]
+  },
+  {
+    "AsName": "",
+    "ImportName": "",
+    "Scope": "",
+    "Source": ".classdef",
+    "UsageName": [
+      "bar"
+    ]
+  },
+  {
+    "AsName": "",
+    "ImportName": "",
+    "Scope": "",
+    "Source": "sys",
+    "UsageName": [
+      "*"
+    ]
+  },
+  {
+    "AsName": "",
+    "ImportName": "",
+    "Scope": "",
+    "Source": "collections",
+    "UsageName": [
+      "bar",
+      "baz"
+    ]
+  },
+  {
+    "AsName": "",
+    "ImportName": "",
+    "Scope": "",
+    "Source": "collections",
+    "UsageName": [
+      "bar"
+    ]
+  }
+]

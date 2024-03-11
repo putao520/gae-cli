@@ -1,0 +1,98 @@
+{
+  "Containers": null,
+  "DataStructures": null,
+  "Fields": [
+    {
+      "Modifiers": null,
+      "TypeType": ".",
+      "TypeValue": "ball"
+    },
+    {
+      "Modifiers": null,
+      "TypeType": ".",
+      "TypeValue": "c"
+    }
+  ],
+  "FullName": "testdata.node_infos",
+  "Imports": [
+    {
+      "AsName": "",
+      "ImportName": "",
+      "Scope": "",
+      "Source": "fmt",
+      "UsageName": null
+    },
+    {
+      "AsName": "",
+      "ImportName": "",
+      "Scope": "",
+      "Source": "time",
+      "UsageName": null
+    }
+  ],
+  "Members": [
+    {
+      "AliasPackage": "samples",
+      "DataStructID": "default",
+      "FileID": "testdata.node_infos",
+      "FunctionNodes": [
+        {
+          "Annotations": null,
+          "Extension": null,
+          "FunctionCalls": [
+            {
+              "FunctionName": "Sleep",
+              "NodeName": "time",
+              "Package": "time",
+              "Parameters": [
+                {
+                  "Modifiers": null,
+                  "ParamName": "",
+                  "Parameters": null,
+                  "ReturnTypes": null,
+                  "TypeType": "Second",
+                  "TypeValue": "time"
+                }
+              ],
+              "Position": {
+                "StartLine": 0,
+                "StartLinePosition": 0,
+                "StopLine": 0,
+                "StopLinePosition": 0
+              },
+              "Type": "time"
+            }
+          ],
+          "InnerFunctions": null,
+          "InnerStructures": null,
+          "IsConstructor": false,
+          "IsReturnNull": false,
+          "Modifiers": null,
+          "MultipleReturns": null,
+          "Name": "Ch",
+          "Override": false,
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "ReturnType": ""
+        }
+      ],
+      "ID": "samples:Ch",
+      "Name": "",
+      "Namespace": null,
+      "Position": {
+        "StartLine": 0,
+        "StartLinePosition": 0,
+        "StopLine": 0,
+        "StopLinePosition": 0
+      },
+      "Structures": null,
+      "Type": "method"
+    }
+  ],
+  "PackageName": "samples"
+}

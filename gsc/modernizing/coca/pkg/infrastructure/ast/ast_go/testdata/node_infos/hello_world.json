@@ -1,0 +1,80 @@
+{
+  "Containers": null,
+  "DataStructures": null,
+  "Fields": null,
+  "FullName": "testdata.node_infos",
+  "Imports": [
+    {
+      "AsName": "",
+      "ImportName": "",
+      "Scope": "",
+      "Source": "fmt",
+      "UsageName": null
+    }
+  ],
+  "Members": [
+    {
+      "AliasPackage": "main",
+      "DataStructID": "default",
+      "FileID": "testdata.node_infos",
+      "FunctionNodes": [
+        {
+          "Annotations": null,
+          "Extension": null,
+          "FunctionCalls": [
+            {
+              "FunctionName": "Println",
+              "NodeName": "fmt",
+              "Package": "fmt",
+              "Parameters": [
+                {
+                  "Modifiers": null,
+                  "ParamName": "",
+                  "Parameters": null,
+                  "ReturnTypes": null,
+                  "TypeType": "STRING",
+                  "TypeValue": "\"hello, world\""
+                }
+              ],
+              "Position": {
+                "StartLine": 0,
+                "StartLinePosition": 0,
+                "StopLine": 0,
+                "StopLinePosition": 0
+              },
+              "Type": "fmt"
+            }
+          ],
+          "InnerFunctions": null,
+          "InnerStructures": null,
+          "IsConstructor": false,
+          "IsReturnNull": false,
+          "Modifiers": null,
+          "MultipleReturns": null,
+          "Name": "main",
+          "Override": false,
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "ReturnType": ""
+        }
+      ],
+      "ID": "main:main",
+      "Name": "",
+      "Namespace": null,
+      "Position": {
+        "StartLine": 0,
+        "StartLinePosition": 0,
+        "StopLine": 0,
+        "StopLinePosition": 0
+      },
+      "Structures": null,
+      "Type": "method"
+    }
+  ],
+  "PackageName": "main"
+}

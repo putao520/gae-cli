@@ -1,0 +1,160 @@
+{
+  "Containers": null,
+  "DataStructures": [
+    {
+      "Annotations": null,
+      "Extend": "",
+      "Extension": null,
+      "Fields": null,
+      "FilePath": "",
+      "FunctionCalls": [
+        {
+          "FunctionName": "",
+          "NodeName": "string",
+          "Package": "testdata.node_infos",
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "Type": ""
+        },
+        {
+          "FunctionName": "",
+          "NodeName": "string",
+          "Package": "testdata.node_infos",
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "Type": ""
+        },
+        {
+          "FunctionName": "",
+          "NodeName": "string",
+          "Package": "testdata.node_infos",
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "Type": ""
+        },
+        {
+          "FunctionName": "",
+          "NodeName": "CodeMember",
+          "Package": "testdata.node_infos",
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "Type": ""
+        },
+        {
+          "FunctionName": "",
+          "NodeName": "domain.JClassNode",
+          "Package": "domain",
+          "Parameters": null,
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "Type": ""
+        }
+      ],
+      "Functions": null,
+      "Implements": null,
+      "Imports": null,
+      "InOutProperties": [
+        {
+          "Modifiers": null,
+          "ParamName": "FullName",
+          "Parameters": null,
+          "ReturnTypes": null,
+          "TypeType": "Identify",
+          "TypeValue": "string"
+        },
+        {
+          "Modifiers": null,
+          "ParamName": "PackageName",
+          "Parameters": null,
+          "ReturnTypes": null,
+          "TypeType": "Identify",
+          "TypeValue": "string"
+        },
+        {
+          "Modifiers": null,
+          "ParamName": "Imports",
+          "Parameters": null,
+          "ReturnTypes": null,
+          "TypeType": "ArrayType",
+          "TypeValue": "string"
+        },
+        {
+          "Modifiers": null,
+          "ParamName": "Members",
+          "Parameters": null,
+          "ReturnTypes": null,
+          "TypeType": "ArrayType",
+          "TypeValue": "CodeMember"
+        },
+        {
+          "Modifiers": null,
+          "ParamName": "ClassNodes",
+          "Parameters": null,
+          "ReturnTypes": null,
+          "TypeType": "ArrayType",
+          "TypeValue": "domain.JClassNode"
+        }
+      ],
+      "InnerStructures": null,
+      "MultipleExtend": null,
+      "NodeName": "CodeFile",
+      "Package": "trial",
+      "Type": ""
+    }
+  ],
+  "Fields": null,
+  "FullName": "testdata.node_infos",
+  "Imports": [
+    {
+      "AsName": "",
+      "ImportName": "",
+      "Scope": "",
+      "Source": "pkg.domain",
+      "UsageName": null
+    }
+  ],
+  "Members": [
+    {
+      "AliasPackage": "trial",
+      "DataStructID": "CodeFile",
+      "FileID": "testdata.node_infos",
+      "FunctionNodes": null,
+      "ID": "testdata.node_infos|trial::CodeFile",
+      "Name": "",
+      "Namespace": null,
+      "Position": {
+        "StartLine": 0,
+        "StartLinePosition": 0,
+        "StopLine": 0,
+        "StopLinePosition": 0
+      },
+      "Structures": null,
+      "Type": "struct"
+    }
+  ],
+  "PackageName": "trial"
+}

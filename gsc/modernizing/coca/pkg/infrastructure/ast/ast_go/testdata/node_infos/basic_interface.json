@@ -1,0 +1,175 @@
+{
+  "Containers": null,
+  "DataStructures": [
+    {
+      "Annotations": null,
+      "Extend": "",
+      "Extension": null,
+      "Fields": null,
+      "FilePath": "",
+      "FunctionCalls": null,
+      "Functions": null,
+      "Implements": null,
+      "Imports": null,
+      "InOutProperties": [
+        {
+          "Modifiers": null,
+          "ParamName": "",
+          "Parameters": null,
+          "ReturnTypes": null,
+          "TypeType": "Identify",
+          "TypeValue": "Shape"
+        },
+        {
+          "Modifiers": null,
+          "ParamName": "",
+          "Parameters": null,
+          "ReturnTypes": null,
+          "TypeType": "Identify",
+          "TypeValue": "Object"
+        }
+      ],
+      "InnerStructures": null,
+      "MultipleExtend": null,
+      "NodeName": "Material",
+      "Package": "",
+      "Type": ""
+    },
+    {
+      "Annotations": null,
+      "Extend": "",
+      "Extension": null,
+      "Fields": null,
+      "FilePath": "",
+      "FunctionCalls": null,
+      "Functions": null,
+      "Implements": null,
+      "Imports": null,
+      "InOutProperties": [
+        {
+          "Modifiers": null,
+          "ParamName": "Volume",
+          "Parameters": null,
+          "ReturnTypes": [
+            {
+              "Modifiers": null,
+              "ParamName": "",
+              "Parameters": null,
+              "ReturnTypes": null,
+              "TypeType": "Identify",
+              "TypeValue": "float64"
+            }
+          ],
+          "TypeType": "Function",
+          "TypeValue": "func"
+        }
+      ],
+      "InnerStructures": null,
+      "MultipleExtend": null,
+      "NodeName": "Object",
+      "Package": "",
+      "Type": ""
+    },
+    {
+      "Annotations": null,
+      "Extend": "",
+      "Extension": null,
+      "Fields": null,
+      "FilePath": "",
+      "FunctionCalls": null,
+      "Functions": null,
+      "Implements": null,
+      "Imports": null,
+      "InOutProperties": [
+        {
+          "Modifiers": null,
+          "ParamName": "Area",
+          "Parameters": [
+            {
+              "Modifiers": null,
+              "ParamName": "a",
+              "Parameters": null,
+              "ReturnTypes": null,
+              "TypeType": "Identify",
+              "TypeValue": "float64"
+            }
+          ],
+          "ReturnTypes": [
+            {
+              "Modifiers": null,
+              "ParamName": "",
+              "Parameters": null,
+              "ReturnTypes": null,
+              "TypeType": "Identify",
+              "TypeValue": "float64"
+            }
+          ],
+          "TypeType": "Function",
+          "TypeValue": "func"
+        }
+      ],
+      "InnerStructures": null,
+      "MultipleExtend": null,
+      "NodeName": "Shape",
+      "Package": "",
+      "Type": ""
+    }
+  ],
+  "Fields": null,
+  "FullName": "testdata.node_infos",
+  "Imports": null,
+  "Members": [
+    {
+      "AliasPackage": "testdata",
+      "DataStructID": "Shape",
+      "FileID": "testdata.node_infos",
+      "FunctionNodes": null,
+      "ID": "testdata.node_infos|testdata::Shape",
+      "Name": "",
+      "Namespace": null,
+      "Position": {
+        "StartLine": 0,
+        "StartLinePosition": 0,
+        "StopLine": 0,
+        "StopLinePosition": 0
+      },
+      "Structures": null,
+      "Type": "interface"
+    },
+    {
+      "AliasPackage": "testdata",
+      "DataStructID": "Object",
+      "FileID": "testdata.node_infos",
+      "FunctionNodes": null,
+      "ID": "testdata.node_infos|testdata::Object",
+      "Name": "",
+      "Namespace": null,
+      "Position": {
+        "StartLine": 0,
+        "StartLinePosition": 0,
+        "StopLine": 0,
+        "StopLinePosition": 0
+      },
+      "Structures": null,
+      "Type": "interface"
+    },
+    {
+      "AliasPackage": "testdata",
+      "DataStructID": "Material",
+      "FileID": "testdata.node_infos",
+      "FunctionNodes": null,
+      "ID": "testdata.node_infos|testdata::Material",
+      "Name": "",
+      "Namespace": null,
+      "Position": {
+        "StartLine": 0,
+        "StartLinePosition": 0,
+        "StopLine": 0,
+        "StopLinePosition": 0
+      },
+      "Structures": null,
+      "Type": "interface"
+    }
+  ],
+  "PackageName": "testdata"
+}

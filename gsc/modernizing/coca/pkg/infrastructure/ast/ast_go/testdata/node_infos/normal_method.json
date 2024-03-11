@@ -1,0 +1,209 @@
+{
+  "Containers": null,
+  "DataStructures": null,
+  "Fields": null,
+  "FullName": "testdata.node_infos",
+  "Imports": [
+    {
+      "AsName": "",
+      "ImportName": "",
+      "Scope": "",
+      "Source": "github.com.antlr.antlr4.runtime.Go.antlr.v4",
+      "UsageName": null
+    },
+    {
+      "AsName": "parser",
+      "ImportName": "",
+      "Scope": "",
+      "Source": "languages.ts",
+      "UsageName": null
+    }
+  ],
+  "Members": [
+    {
+      "AliasPackage": "testdata",
+      "DataStructID": "default",
+      "FileID": "testdata.node_infos",
+      "FunctionNodes": [
+        {
+          "Annotations": null,
+          "Extension": null,
+          "FunctionCalls": [
+            {
+              "FunctionName": "",
+              "NodeName": "antlr",
+              "Package": "testdata.node_infos",
+              "Parameters": null,
+              "Position": {
+                "StartLine": 0,
+                "StartLinePosition": 0,
+                "StopLine": 0,
+                "StopLinePosition": 0
+              },
+              "Type": ""
+            }
+          ],
+          "InnerFunctions": null,
+          "InnerStructures": null,
+          "IsConstructor": false,
+          "IsReturnNull": false,
+          "Modifiers": null,
+          "MultipleReturns": [
+            {
+              "Modifiers": null,
+              "ParamName": "code",
+              "Parameters": null,
+              "ReturnTypes": null,
+              "TypeType": "Identify",
+              "TypeValue": "string"
+            },
+            {
+              "Modifiers": null,
+              "ParamName": "",
+              "Parameters": null,
+              "ReturnTypes": null,
+              "TypeType": "Star",
+              "TypeValue": "parser.TypeScriptParser"
+            }
+          ],
+          "Name": "ProcessTsString",
+          "Override": false,
+          "Parameters": [
+            {
+              "Modifiers": null,
+              "ParamName": "code",
+              "Parameters": null,
+              "ReturnTypes": null,
+              "TypeType": "Identify",
+              "TypeValue": "string"
+            }
+          ],
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "ReturnType": ""
+        }
+      ],
+      "ID": "testdata:ProcessTsString",
+      "Name": "",
+      "Namespace": null,
+      "Position": {
+        "StartLine": 0,
+        "StartLinePosition": 0,
+        "StopLine": 0,
+        "StopLinePosition": 0
+      },
+      "Structures": null,
+      "Type": "method"
+    },
+    {
+      "AliasPackage": "testdata",
+      "DataStructID": "default",
+      "FileID": "testdata.node_infos",
+      "FunctionNodes": [
+        {
+          "Annotations": null,
+          "Extension": null,
+          "FunctionCalls": [
+            {
+              "FunctionName": "",
+              "NodeName": "parser",
+              "Package": "testdata.node_infos",
+              "Parameters": null,
+              "Position": {
+                "StartLine": 0,
+                "StartLinePosition": 0,
+                "StopLine": 0,
+                "StopLinePosition": 0
+              },
+              "Type": ""
+            },
+            {
+              "FunctionName": "",
+              "NodeName": "antlr",
+              "Package": "testdata.node_infos",
+              "Parameters": null,
+              "Position": {
+                "StartLine": 0,
+                "StartLinePosition": 0,
+                "StopLine": 0,
+                "StopLinePosition": 0
+              },
+              "Type": ""
+            },
+            {
+              "FunctionName": "",
+              "NodeName": "parser",
+              "Package": "testdata.node_infos",
+              "Parameters": null,
+              "Position": {
+                "StartLine": 0,
+                "StartLinePosition": 0,
+                "StopLine": 0,
+                "StopLinePosition": 0
+              },
+              "Type": ""
+            }
+          ],
+          "InnerFunctions": null,
+          "InnerStructures": null,
+          "IsConstructor": false,
+          "IsReturnNull": false,
+          "Modifiers": null,
+          "MultipleReturns": [
+            {
+              "Modifiers": null,
+              "ParamName": "is",
+              "Parameters": null,
+              "ReturnTypes": null,
+              "TypeType": "",
+              "TypeValue": "antlr.CharStream"
+            },
+            {
+              "Modifiers": null,
+              "ParamName": "",
+              "Parameters": null,
+              "ReturnTypes": null,
+              "TypeType": "Star",
+              "TypeValue": "parser.TypeScriptParser"
+            }
+          ],
+          "Name": "processStream",
+          "Override": false,
+          "Parameters": [
+            {
+              "Modifiers": null,
+              "ParamName": "is",
+              "Parameters": null,
+              "ReturnTypes": null,
+              "TypeType": "",
+              "TypeValue": "antlr.CharStream"
+            }
+          ],
+          "Position": {
+            "StartLine": 0,
+            "StartLinePosition": 0,
+            "StopLine": 0,
+            "StopLinePosition": 0
+          },
+          "ReturnType": ""
+        }
+      ],
+      "ID": "testdata:processStream",
+      "Name": "",
+      "Namespace": null,
+      "Position": {
+        "StartLine": 0,
+        "StartLinePosition": 0,
+        "StopLine": 0,
+        "StopLinePosition": 0
+      },
+      "Structures": null,
+      "Type": "method"
+    }
+  ],
+  "PackageName": "testdata"
+}
